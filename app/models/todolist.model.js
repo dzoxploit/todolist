@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const Todolist = mongoose.model(
-    "User",
+    "todolist",
     new mongoose.Schema({
         judul: String,
         description: String,
