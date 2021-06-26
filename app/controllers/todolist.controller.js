@@ -82,7 +82,7 @@ exports.findOne = (req,res) => {
 
 exports.findAll = (req,res) => {
     Todolist.find()
-    .then(notes => {
+    .then(todolists => {
         res.send(todolists);
     }).catch(err => {
         res.status(500).send({
